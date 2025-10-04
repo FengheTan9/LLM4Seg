@@ -166,6 +166,15 @@ This code uses helper functions from [CMUNeXt](https://github.com/FengheTan9/CMU
 If the code, paper and weights help your research, please cite:
 
 ```
+@inproceedings{tang2025pre,
+  title={Pre-trained llm is a semantic-aware and generalizable segmentation booster},
+  author={Tang, Fenghe and Ma, Wenxin and He, Zhiyang and Tao, Xiaodong and Jiang, Zihang and Zhou, Shaohua Kevin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={402--412},
+  year={2025},
+  organization={Springer}
+}
+
 @article{llm4seg,
   title={Pre-Trained LLM is a Semantic-Aware and Generalizable Segmentation Booster},
   author={Tang, Fenghe and Ma, Wenxin and He, Zhiyang and Tao, Xiaodong and Jiang, Zihang and Zhou, S Kevin},
