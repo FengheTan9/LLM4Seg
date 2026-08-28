@@ -80,11 +80,14 @@ Please put the dataset (e.g. [BUSI](https://www.kaggle.com/aryashah2k/breast-ult
             │   ├── malignant (17).png
             │   ├── ...
             |
-            └── masks
+            ├── masks
                 ├── 0
                 |   ├── benign (10).png
                 |   ├── malignant (17).png
                 |   ├── ...
+            |
+            ├── busi_train.txt
+            └── busi_val.txt
         ├── your dataset
             ├── images
             |   ├── 0a7e06.png
@@ -135,6 +138,8 @@ You can first split your dataset:
 ```python
 python split.py --dataset_name busi --dataset_root ./data
 ```
+
+The `*_train.txt` and `*_val.txt` files (e.g. `busi_train.txt` and `busi_val.txt`) are stored in the same directory as the `images` and `masks` folders. `*_train.txt` holds the training set and `*_val.txt` holds the validation set. Each line only needs the image ID (the filename without its extension); there is no need to specify whether an entry refers to the original image or its mask, because the dataloader automatically loads the matching original image from `images` and its corresponding mask from `masks/0` for each ID and packs them into a dictionary for training.
 
 Train and validate your dataset:
 
